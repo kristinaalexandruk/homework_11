@@ -1,0 +1,561 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+/* -------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+body {
+	font-family: "Gilroy";
+	font-weight: 500;
+	color: #333333;
+}
+
+/* ===================================================== */
+
+._container {
+	max-width: 1170px;
+	padding: 0px 15px;
+	margin: 0px auto; 
+}
+
+.btn {
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	padding: 0px 27px;
+	color:#fff;
+	font-weight: 600;
+	font-size: 18px;
+	background: linear-gradient(90deg, #F6BD60 0%, #E88952 100%);
+	box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
+	border-radius: 3px;
+}
+
+.btn:hover {
+	background: linear-gradient(90deg, #d6a351 0%, #c97443 100%);
+}
+
+.main-btn {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0px 67px;
+	color:#fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	background: linear-gradient(90deg, #87AFF1 0%, #6C80CB 100%, #6C80CB 100%);
+	box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+	border-radius: 3px;
+}
+
+.main-btn:hover {
+	background: linear-gradient(90deg, #6587be 0%, #5465a3 100%, #5364a1 100%);
+}
+
+.title {
+	font-weight: 800;
+	font-size: 36px;
+}
+/* ===================================================== */
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 0px 20px 0px;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 50;
+}
+
+.header__top {
+	margin: 0px 0px 40px 0px;
+}
+
+/* ===================================================== */
+
+.top-header__column {
+	display: inline-block;
+}
+
+.top-header__logo {
+	margin: 0px 72px 0px 0px;
+}
+
+.top-header__social {
+	margin: 0px 104px 0px 0px;
+}
+
+/* ===================================================== */
+
+.logo-top-header {
+	display: inline-block;
+	max-width: 385px;
+}
+
+.logo-top-header__logo {
+	display: inline-block;
+	padding: 0px 20px 0px 0px;
+	border-right: 4px solid #89AFEF;
+	vertical-align: top;
+}
+
+.logo-top-header__text {
+	display: inline-block;
+	max-width: 193px;
+	line-height: 16px;
+	color: #5D5D5D;
+	margin: 0px 0px 0px 25px;
+}
+
+/* ===================================================== */
+
+.social-top-header__link {
+	height: 43px;
+	width: 43px;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0px 18px 0px 0px;
+}
+
+.social-top-header__link:last-child {
+	margin: 0px 0px 0px 0px;
+}
+
+.social-top-header__link_whatsapp {
+	background: #2DD038 url('../img/social/whatsapp-logo.svg') center no-repeat;
+	box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
+	transition: 0.4s ease;
+}
+
+.social-top-header__link_whatsapp:hover {
+	background-color: #1ea527;
+}
+
+.social-top-header__link_viber {
+	background:#7B519D url('../img/social/viber-logo.svg') center no-repeat;
+	box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
+	transition: 0.4s ease;
+}
+
+.social-top-header__link_viber:hover {
+	background-color:#633d83;
+}
+
+.social-top-header__link_telegram {
+	background:#5BBAF0 url('../img/social/telegram-logo.svg') 12px 14px no-repeat;
+	box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+	transition: 0.4s ease;
+}
+
+.social-top-header__link_telegram:hover {
+	background-color:#4499ca;
+}
+
+/* ===================================================== */
+
+.contacts-top-header__contacts {
+	display: inline-block;
+}
+
+.contacts-top-header__phone {
+	display: block;
+	font-weight: 700;
+	font-size: 20px;
+	color: #333333;
+	margin: 0px 0px 11px -30px;
+	background: url('../img/social/call-answer.svg') 0 0 no-repeat;
+	padding: 0px 0px 0px 30px;
+}
+
+.contacts-top-header__email {
+	display: block;
+	font-size: 17px;
+	color: #333333;
+	text-align: right;
+	background: url('../img/social/mail.svg') 0 3px no-repeat;
+	margin: 0px 0px 0px 4px;
+}
+
+.contacts-top-header__phone:hover,
+.contacts-top-header__email:hover {
+	text-decoration: underline;
+}
+
+.contacts-top-header__button {
+	margin: 0px 0px 0px 28px;
+	vertical-align: top;
+}
+
+/* ===================================================== */
+
+.menu-header__list li {
+	display: inline-block;
+	margin: 0px 50px 0px 0px;
+}
+
+.menu-header__list li:last-child {
+	margin: 0px 0px 0px 0px;
+}
+
+.menu-header__link {
+	font-size: 16px;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+.menu-header__link:hover {
+	text-decoration: underline;
+}
+
+/* ===================================================== */
+
+.registration-of-admissions {
+	padding: 160px 0px 0px 0px;
+	background: url('../img/bg.png') top right / 50% 100% no-repeat;
+	margin: 0px 0px 62px 0px;
+}
+
+.registration-of-admissions__content {
+	display: inline-block;
+	max-width: 675px;
+}
+
+.registration-of-admissions__title {
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 51px;
+	margin: 110px 0px 35px 0px;
+}
+
+.registration-of-admissions__subtitle {
+	font-size: 24px;
+}
+
+.registration-of-admissions__subtitle span {
+	font-weight: 800;
+}
+
+.registration-of-admissions__button {
+	margin: 40px 0px 0px 0px;
+}
+
+.registration-of-admissions__image {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: 5px;
+}
+
+/* ===================================================== */
+
+.draw-up-documents {
+	margin: 0px 0px 70px 0px;
+}
+
+.draw-up-documents__container {}
+
+.draw-up-documents__title {
+	margin: 0px 0px 40px 0px;
+	text-align: center;
+}
+
+.draw-up-documents__column {
+	width: 100%;
+	margin: 0px 0px 30px 0px;
+}
+
+/* ===================================================== */
+
+.item-draw-up-documents {
+	display: block;
+	text-align: center;
+	padding: 30px 20px 30px 20px;
+	box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.1);
+	min-height: 200px;
+	transition: 0.4s ease;
+}
+
+.item-draw-up-documents:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.item-draw-up-documents__image {
+	margin: 0px 0px 17px 0px;
+}
+
+.item-draw-up-documents__title {
+	max-width: 205px;
+	margin: 0px auto;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 23px;
+	color: #333333;
+}
+
+/* ===================================================== */
+
+.advantages {
+	padding: 45px 0px;
+	background-color: #F6F6F6;
+	margin: 0px 0px 60px 0px;
+}
+
+.advantages__column {
+	width: 100%;
+	margin: 0px 0px 50px 0px;
+}
+
+.advantages__column:last-child {
+	margin: 0px 0px 0px 0px;
+}
+
+/* ===================================================== */
+
+.item-advantages {
+	text-align: center;
+}
+
+.item-advantages__image {
+	height: 98px;
+	width: 98px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0px auto 15px;
+	border: 1px solid #E8E8E8;
+}
+
+.item-advantages__image img {
+	position: relative;
+	top: 25px;
+}
+
+.item-advantages__image img:nth-child(4) {
+	top: 35px;
+}
+
+.item-advantages__title {
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 27px;
+	margin: 0px 0px 15px 0px;
+}
+
+.item-advantages__text {
+	font-size: 17px;
+	line-height: 25px;
+}
+
+/* ===================================================== */
+
+.educational-programs {
+	margin: 0px 0px 60px 0px;
+}
+
+.educational-programs__title {
+	text-align: center;
+	margin: 0px 0px 40px 0px;
+}
+
+.educational-programs__column {
+	width: 100%;
+	margin: 0px 0px 30px 0px;
+}
+
+/* ===================================================== */
+
+.item-educational-programs {
+	padding: 25px;
+	text-align: center;
+	display: block;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
+	transition: 0.4s ease;
+}
+
+.item-educational-programs:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.item-educational-programs__image {
+	width: 215px;
+	margin: 0px auto 17px;
+}
+
+.item-educational-programs__image img {
+	max-width: 100%;
+}
+
+.item-educational-programs__title {
+	font-weight: 800;
+	font-size: 19px;
+	line-height: 23px;
+	color: #333333;
+	margin: 0px 0px 15px 0px;
+}
+
+.item-educational-programs__subtitle {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 19px;
+	color: #53B43B;
+	margin: 0px 0px 30px 0px;
+	background: url('../img/check.svg') 0 3px no-repeat;
+	padding: 0px 0px 0px 20px;
+}
+
+.item-educational-programs__price {
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 27px;
+	color: #333333;
+}
+
+/* ===================================================== */
+
+.news {
+	margin: 0px 0px 60px 0px;
+}
+
+.news__title {
+	margin: 0px 0px 35px 0px;
+}
+
+.news__column {
+	width: 100%;
+	margin: 0px 0px 30px 0px;
+}
+
+/* ===================================================== */
+
+.item-news {
+	display: block;
+	text-align: center;
+	padding: 25px;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
+	transition: 0.4s ease;
+}
+
+.item-news:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.item-news__image {
+	width: 215px;
+	margin: 0px auto 15px;
+}
+
+.item-news__image img {
+	max-width: 100%;
+}
+
+.item-news__date {
+	font-size: 14px;
+	color: #ABABAB;
+	margin: 0px 0px 10px 0px;
+}
+
+.item-news__title {
+	font-weight: 700;
+	color: #333333;
+	font-size: 19px;
+	line-height: 23px;
+	margin: 0px 0px 10px 0px;
+}
+
+.item-news__text {
+	font-size: 16px;
+	line-height: 19px;
+	color: #333333;
+}
